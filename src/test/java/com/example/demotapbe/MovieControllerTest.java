@@ -19,7 +19,7 @@ class MovieControllerTest {
   @Test
   void films() throws Exception {
     mockMvc.perform(get("/films")).andExpect(status().isOk())
-            .andExpect(jsonPath("$[0].title").value("A New Hope2"))
+            .andExpect(jsonPath("$[0].title").value("A New Hope"))
             .andExpect(jsonPath("$[0].director").value("George Lucas"))
     ;
   }
